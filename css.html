@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEMO</title>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    <!-- Nav Bar Statd -->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Ahad</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav m-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">content</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="html.html">HTML</a></li>
+            <li><a class="dropdown-item" href="css.html">CSS</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="bootsrap.html">Bootstrap</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQ</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- Nav Bar end -->
+ <p>🌈 CSS শেখার সম্পূর্ণ গাইড (Beginner to Advanced)
+✅ ১️⃣ CSS কী?
+
+CSS (Cascading Style Sheets) হলো ওয়েব ডিজাইনের ভাষা।
+HTML ওয়েবপেজের বাঁধাই—আর CSS দেয় রঙ, সৌন্দর্য, আকৃতি, লেআউট।
+
+CSS দিয়ে যা করা যায়:
+
+Text color, size, spacing
+
+Layout design (header, menu, sidebar)
+
+Responsive design (mobile friendly)
+
+Animation
+
+Backgrounds, gradients
+
+Flexbox, Grid layout
+
+✅ ২️⃣ CSS শিখতে যেসব টুল দরকার
+✔ একটি Text Editor
+
+VS Code (সেরা)
+
+Sublime Text
+
+Notepad++
+
+Atom
+
+✔ একটি Browser
+
+Chrome/Firebase/Edge (Developer Tools থাকা জরুরি)
+
+✅ ৩️⃣ CSS এর তিন ধরণের ব্যবহার
+1️⃣ Inline CSS
+<p style="color: red;">Hello CSS</p>
+
+2️⃣ Internal CSS
+<style>
+  p { color: blue; }
+</style>
+
+3️⃣ External CSS (সেরা)
+/* style.css */
+p {
+  color: green;
+}
+
+
+HTML এ লিংক দিয়ে যুক্ত করা হয়:
+
+<link rel="stylesheet" href="style.css">
+
+✅ 4️⃣ CSS এর নিয়ম (Ruleset) কী?
+
+একটি সাধারণ CSS রুল এমন হয়:
+
+selector {
+  property: value;
+}
+
+
+উদাহরণ:
+
+h1 {
+  color: red;
+  font-size: 30px;
+}
+
+✅ 5️⃣ CSS Selectors (সবচেয়ে গুরুত্বপূর্ণ)
+✔ Basic Selectors
+Selector	কাজ
+element	HTML ট্যাগ সিলেক্ট
+.class	ক্লাস সিলেক্ট
+#id	ইউনিক আইডি সিলেক্ট
+*	সব এলিমেন্ট সিলেক্ট
+✔ Combinators
+
+.menu li
+
+div > p
+
+h1 + p
+
+✔ Attribute selectors
+input[type="text"] {
+    color: blue;
+}
+
+✅ 6️⃣ CSS Box Model (খুবই গুরুত্বপূর্ণ)
+
+প্রতিটি HTML এলিমেন্টের চারপাশে থাকে:
+
++-------------------------+
+| margin                 |
+| +---------------------+ |
+| |   border            | |
+| | +-----------------+ | |
+| | |   padding       | | |
+| | | +-------------+ | | |
+| | | |   content   | | | |
+| | | +-------------+ | | |
+| | +-----------------+ | |
+| +---------------------+ |
++-------------------------+
+
+চারটি অংশ:
+
+Content
+
+Padding
+
+Border
+
+Margin
+
+✅ 7️⃣ CSS Display Types
+✔ block
+✔ inline
+✔ inline-block
+✔ flex
+✔ grid
+✔ none
+✅ 8️⃣ Modern Layout System
+⭐ Flexbox (center, align, row, column)
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+⭐ CSS Grid (2D layout)
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+✅ 9️⃣ Colors, Fonts, Backgrounds
+✔ Colors
+color: red;
+color: #ff0000;
+color: rgb(255,0,0);
+
+✔ Background
+background-color: black;
+background-image: url("bg.jpg");
+
+✔ Google Fonts
+font-family: 'Poppins', sans-serif;
+
+✅ 🔟 Responsive Design (Mobile Friendly)
+Media Queries:
+@media (max-width: 768px) {
+  body {
+    background: yellow;
+  }
+}
+
+✅ 1️⃣1️⃣ CSS Animation & Transition
+Transition:
+button {
+  transition: 0.3s;
+}
+
+Animation:
+@keyframes move {
+  0% { left: 0; }
+  100% { left: 100px; }
+}
+
+✅ 1️⃣2️⃣ SASS/SCSS (Advanced CSS)
+
+CSS এর বড় প্রজেক্ট সহজ করার জন্য:
+
+Variables
+
+Nesting
+
+Mixins
+
+Functions
+
+✅ 1️⃣3️⃣ CSS প্রজেক্ট আইডিয়া (প্র্যাকটিস করতে)
+
+Login Form Design
+
+Responsive Navbar
+
+Portfolio Website
+
+Product Card UI
+
+Responsive Landing Page
+
+CSS Animation Banner</p>
+ <!-- Footer Statd -->
+ <footer class="container-fluid d-flex justify-content-between bg-dark text-light py-3 px-5 fixed-bottom">
+    <span>Thank you  come to my Web Sied</span>
+    <span>
+        <a href="http://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="http://whatsapp.com" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        <a href="http://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="http://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="http://x.com" target="_blank"><i class="bi bi-twitter-x"></i></a>
+    </span>
+ </footer>
+ <!-- Footer end -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js
+"></script>
+    
+</body>
+</html>
